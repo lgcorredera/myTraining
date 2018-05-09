@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1daba3</color>
+    <color name="colorPrimaryDark">#1b9e96</color>
+    <color name="colorAccent_trans">#91fdb984</color>
+    <color name="colorAccent">#FF9E53</color>
+    <color name="colorAccent_dark">#d45c00</color>
+    <color name="black_overlay">#454343</color>
+    <color name="color_ss_light">#74e1da</color>
+    <color name="color_ss">#3fdad1</color>
+    <color name="color_ss_dark">#1daba3</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTrans">#c0ffffff</color>
+    <color name="colorTrans_menu">#a3ffffff</color>
+    <color name ="colorWhiteOld">#f1f1f1</color>
+    <color name="colorError">#cf0000</color>
+    <color name="colorGrease">#e1666464</color>
+    <color name="color_grease_dark">#545353</color>
+    <color name="blue">#03A9F4</color>
+
+</resources>

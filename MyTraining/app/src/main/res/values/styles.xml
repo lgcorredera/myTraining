@@ -1,0 +1,63 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+
+    <!--RegisterActivity theme. -->
+    <style name="AppTheme.FloatingLabel" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/color_ss_dark</item>
+    </style>
+
+    <style name="EditText" parent="AppTheme">
+        <item name="colorControlNormal">@color/color_ss_dark</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="list_item_appearance">
+        <item name="android:fontFamily">@font/light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="toolbar">
+        <item name="android:fontFamily">@font/regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="tabs">
+        <item name="android:fontFamily">@font/light</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <style name="AppLoginTheme.Test" parent="Theme.AccountKit">
+        <item name="com_accountkit_primary_text_color">@color/colorWhite</item>
+        <item name="com_accountkit_status_bar_color">@color/color_ss_dark</item>
+        <item name="com_accountkit_button_background_color">@color/color_ss_light</item>
+        <item name="com_accountkit_button_border_color">@color/color_ss_dark</item>
+        <item name="com_accountkit_input_background_color">@color/colorAccent_trans</item>
+        <item name="com_accountkit_input_border_color">@color/colorAccent</item>
+        <item name="com_accountkit_icon_color">@color/color_ss</item>
+    </style>
+
+</resources>

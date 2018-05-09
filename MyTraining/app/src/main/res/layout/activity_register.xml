@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background"
+    android:backgroundTint="@color/colorTrans"
+    android:backgroundTintMode="src_over"
+    android:alpha="0.9"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tfg.lauragc94.mytraining.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/light"
+            android:text="@string/fill_personal_data"
+            android:textAlignment="center"
+            android:textAppearance="@style/AppTheme.FloatingLabel"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/area_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/field_name" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:counterOverflowTextAppearance="@color/colorError"
+            android:hint="@string/field_name"
+            android:fontFamily="@font/light"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColorHint="@color/colorGrease"
+            app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+            <EditText
+                android:id="@+id/field_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:singleLine="true"
+                android:fontFamily="@font/light"
+                android:textSize="18sp"
+                android:textColor="@color/black_overlay"
+                android:theme="@style/EditText"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@+id/area_name"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/field_phone" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_countryCode"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:backgroundTint="@color/color_ss_dark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="40"
+            android:fontFamily="@font/light"
+            android:textSize="15sp"
+            android:spinnerMode="dialog" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_phone"
+            style="@+id/input_layout_mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:hint="@string/field_phone"
+            android:fontFamily="@font/light"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColorHint="@color/colorGrease"
+            app:errorEnabled="true"
+            app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+            <EditText
+                android:id="@+id/field_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:ems="12"
+                android:gravity="center_vertical"
+                android:inputType="phone"
+                android:fontFamily="@font/light"
+                android:textSize="18sp"
+                android:textColor="@color/black_overlay"
+                android:theme="@style/EditText" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@+id/area_phone"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_phone"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_row="2"
+            android:src="@drawable/field_email" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            app:errorEnabled="true"
+            android:layout_marginLeft="20dp"
+            android:hint="@string/field_email"
+            android:fontFamily="@font/light"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColorHint="@color/colorGrease"
+            android:layout_row="2"
+            app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+
+            <EditText
+                android:id="@+id/field_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:fontFamily="@font/light"
+                android:textSize="18sp"
+                android:textColor="@color/black_overlay"
+                android:theme="@style/EditText" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!-- Bottoms -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_cancelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorTrans"
+            android:backgroundTintMode="src_over"
+            android:text="@string/cancelar"
+            android:fontFamily="@font/medium"
+            android:textSize="18sp"
+            android:textColor="@color/color_ss_dark" />
+
+        <Button
+            android:id="@+id/button_accept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/color_ss_dark"
+            android:text="@string/accept"
+            android:fontFamily="@font/medium"
+            android:textSize="18sp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp"
+        android:clickable="true"
+        android:src="@drawable/rubber"
+        app:backgroundTint="@color/colorWhite" />
+
+
+</RelativeLayout>

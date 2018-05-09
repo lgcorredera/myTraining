@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/degradado_inv"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ConfigurationActivity">
+
+
+    <TextView
+        android:id="@+id/personal_data"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/nav_background"
+        android:fontFamily="@font/regular"
+        android:gravity="center_vertical"
+        android:text="@string/personal_data"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:padding="16dp"
+        card_view:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/area_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/user" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/light"
+                android:hint="@string/field_name"
+                android:textColorHint="@color/colorGrease"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:counterEnabled="true"
+                app:counterMaxLength="30"
+                app:counterOverflowTextAppearance="@color/colorError"
+                app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+                <EditText
+                    android:id="@+id/field_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/light"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="18sp"
+                    android:theme="@style/EditText" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/area_name"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/phone" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_phone"
+                style="@+id/input_layout_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="70"
+                android:fontFamily="@font/light"
+                android:hint="@string/field_phone"
+                android:textColorHint="@color/colorGrease"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+                <EditText
+                    android:id="@+id/field_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:ems="12"
+                    android:fontFamily="@font/light"
+                    android:gravity="center_vertical"
+                    android:inputType="phone"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="18sp"
+                    android:theme="@style/EditText" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/area_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/area_phone"
+            android:layout_marginTop="150dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/img_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_phone"
+                android:layout_column="0"
+                android:layout_gravity="center_vertical"
+                android:layout_row="2"
+                android:src="@drawable/email" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_marginLeft="16dp"
+                android:layout_row="2"
+                android:fontFamily="@font/light"
+                android:hint="@string/field_email"
+                android:textColorHint="@color/colorGrease"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:errorEnabled="true"
+                app:hintTextAppearance="@style/AppTheme.FloatingLabel">
+
+
+                <EditText
+                    android:id="@+id/field_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/light"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="18sp"
+                    android:theme="@style/EditText" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!-- Bottoms -->
+    <TextView
+        android:id="@+id/delete_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="@string/delete_data"
+        android:fontFamily="@font/medium_italic"
+        android:textColor="@color/black_overlay"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/card"
+        android:layout_below="@+id/card"
+        android:clickable="true"
+        app:srcCompat="@drawable/edit" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/check_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/card"
+        android:layout_below="@+id/card"
+        android:clickable="true"
+        app:srcCompat="@drawable/check" />
+
+
+</RelativeLayout>

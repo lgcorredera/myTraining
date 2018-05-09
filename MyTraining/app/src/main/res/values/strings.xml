@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">My Training</string>
+
+    <!-- Strings related to splash screen -->
+    <string name="title_activity_splashscreen">Pantalla de inicio</string>
+
+    <!-- Strings related to login -->
+    <string name="app">MY TRAINING</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="welcome">BIENVENIDO</string>
+    <string name="bottom_email">EMAIL</string>
+    <string name="bottom_sms">SMS</string>
+    <string name="FACEBOOK_APP_ID">166000700692417</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">d1ab222bdc32ca9a0addb2582b4035d7</string>
+    <string name="ak_login_protocol_scheme">ak166000700692417</string>
+
+    <!-- Strings related to register -->
+    <string name="field_name">Nombre y apellidos</string>
+    <string name="field_email">Correo electrónico</string>
+    <string name="field_phone">Teléfono</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="accept">Aceptar</string>
+    <string name="fill_personal_data">DATOS PERSONALES</string>
+
+
+    <!-- Strings related to menu -->
+    <string name="title_activity_menu">Menú</string>
+    <string name="free_training_text">ENTRENAMIENTO\nLIBRE</string>
+    <string name="custom_training_text">ENTRENAMIENTO PERSONALIZADO</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Laura García Corredera</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_info">Ayuda</string>
+    <string name="statistics">Estadísticas</string>
+    <string name="calendar">Calendario</string>
+    <string name="configuration">Configuración</string>
+    <string name="logout">Cerrar sesión</string>
+
+    <!-- Strings related to user configuration -->
+    <string name="personal_data">DATOS PERSONALES</string>
+    <string name="modify_data">Modificar datos</string>
+    <string name="delete_data">Eliminar mi cuenta</string>
+
+    <!-- Strings related to free training -->
+    <string name="title_activity_free_training">Entrenamiento libre</string>
+    <string name="tab_text_1">MUSCULACIÓN</string>
+    <string name="tab_text_2">PÉRDIDA DE PESO</string>
+    <string name="tab_text_3">MANTENIMIENTO</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="default_tab">Default Tab</string>
+    <string name="tab_with_icon_text"><![CDATA[Tab with Icon & Text]]></string>
+    <string name="tab_with_icons">Tab with Icons</string>
+    <string name="custom_tab"><![CDATA[Custom Tab with Icon & Text]]></string>
+
+</resources>

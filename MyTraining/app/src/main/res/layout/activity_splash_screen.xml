@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@color/color_ss_dark"
+     tools:context="com.tfg.lauragc94.mytraining.SplashScreenActivity">
+
+     <ImageView
+         android:id="@+id/app_logotype"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_centerVertical="true"
+         android:background="@color/color_ss_dark"
+         android:src="@drawable/logotype"
+         tools:ignore="ContentDescription" />
+
+ </RelativeLayout>
+</merge>

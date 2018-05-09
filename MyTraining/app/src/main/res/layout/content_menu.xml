@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MenuActivity"
+    tools:showIn="@layout/app_bar_menu">
+
+
+    <Button
+        android:id="@+id/custom_training_button"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/custom_training"
+        android:backgroundTint="@color/colorTrans_menu"
+        android:backgroundTintMode="src_over"
+        android:text="@string/custom_training_text"
+        android:fontFamily="@font/regular"
+        android:textAlignment="center"
+        android:textColor="@color/black_overlay"
+        android:textSize="28sp" />
+
+
+    <Button
+        android:id="@+id/free_training_button"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/free_training"
+        android:backgroundTint="@color/colorTrans_menu"
+        android:backgroundTintMode="src_over"
+        android:text="@string/free_training_text"
+        android:fontFamily="@font/regular"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        android:textColor="@color/black_overlay"/>
+
+
+</LinearLayout>
